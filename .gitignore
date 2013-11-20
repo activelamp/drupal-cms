@@ -1,0 +1,22 @@
+# OS files
+.DS_Store
+Thumbs.db
+.swp
+.vagrant
+.idea
+*.iml
+
+# Logs and DBs
+*.mysql
+*.log
+*.sql
+*.sqlite
+
+# Exclude the Drupal build
+public_html
+build
+VERSION
+
+# Exclude composer generated directories
+tests/bin
+tests/vendor
