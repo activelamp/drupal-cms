@@ -1,0 +1,19 @@
+<VirtualHost *:80> 
+  ServerName <%= vhost_domain %> 
+<% aliases.each do |val| -%>
+ServerAlias <%= val %>
+<% end -%>
+  ServerAdmin admin@<%= vhost_domain %> 
+  DocumentRoot <%= vhost_root %> 
+  ErrorLog logs/<%= vhost_domain %>-error_log 
+  CustomLog logs/<%= vhost_domain %>-access_log common 
+  <Directory /var/www/<%= vhost_domain %>> 
+    Allow from all
+    Options +Includes +Indexes +FollowSymLinks 
+    AllowOverride all 
+  </Directory> 
+</VirtualHost>
+<VirtualHost *:80> 
+  ServerName www.<%= vhost_domain %> 
+  Redirect 301 / http://<%= vhost_domain %>/ 
+</VirtualHost>
