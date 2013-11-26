@@ -1,0 +1,3 @@
+# Cache directories
+css/*.css
+.sass-cache

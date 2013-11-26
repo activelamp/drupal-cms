@@ -6,9 +6,9 @@ core = "7.x"
 
 ; Drupal core.
 projects[drupal][type] = "core"
-projects[drupal][version] = "7.23"
+projects[drupal][version] = "7.24"
 projects[drupal][download][type] = get
-projects[drupal][download][url] = http://ftp.drupal.org/files/projects/drupal-7.23.tar.gz
+projects[drupal][download][url] = http://ftp.drupal.org/files/projects/drupal-7.24.tar.gz
 
 ; Do not alert an ajax error to screen, silently log it.
 projects[drupal][patch][] = http://drupal.org/files/core-js-drupal-log-1232416-100-D7.patch

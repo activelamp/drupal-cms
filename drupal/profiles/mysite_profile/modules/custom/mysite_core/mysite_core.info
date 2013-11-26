@@ -1,0 +1,6 @@
+name = MySite Core
+description = Core functionality that does not belong in other modules
+core = 7.x
+package = MySite
+dependencies[] = features
+features[features_api][] = api:2

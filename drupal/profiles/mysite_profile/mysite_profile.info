@@ -1,0 +1,13 @@
+name = MySite Profile
+description = MySite profile is a sub-profile of the Panopoly profile.
+distribution_name = MySite Distribution
+core = 7.x
+exclusive = TRUE
+
+base = panopoly
+
+files[] = mysite_profile.profile
+
+dependencies[] = features
+dependencies[] = mysite_core
+dependencies[] = panopoly_core

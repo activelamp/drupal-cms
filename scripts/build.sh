@@ -37,7 +37,7 @@ echo "
   ),
 );
 
-\$conf['stage_file_proxy_origin'] = 'http://na.mysite.com';
+\$conf['stage_file_proxy_origin'] = 'http://mysite.com';
 \$conf['securepages_enable'] = FALSE;
 \$conf['reroute_email_enable'] = TRUE;
 \$conf['cache'] = FALSE; //page cache
@@ -58,10 +58,10 @@ bundle install
 # composer -d=public_html/profiles/mysite_profile/modules/custom/mymodule install
 
 # Symlink directories to the working directory local profile.
-# rm -rf $WD/public_html/profiles/mysite_profile/modules/custom
-# ln -nsf $WD/drupal/profiles/mysite_profile/modules/custom $WD/public_html/profiles/mysite_profile/modules/custom
-# rm -rf $WD/public_html/profiles/mysite_profile/themes/custom
-# ln -nsf $WD/drupal/profiles/mysite_profile/themes/custom $WD/public_html/profiles/mysite_profile/themes/custom
+rm -rf $WD/public_html/profiles/mysite_profile/modules/custom
+ln -nsf $WD/drupal/profiles/mysite_profile/modules/custom $WD/public_html/profiles/mysite_profile/modules/custom
+rm -rf $WD/public_html/profiles/mysite_profile/themes/custom
+ln -nsf $WD/drupal/profiles/mysite_profile/themes/custom $WD/public_html/profiles/mysite_profile/themes/custom
 
 # Compile sass
 # bundle exec compass compile $WD/public_html/profiles/mysite_profile/themes/custom/mytheme/

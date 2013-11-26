@@ -1,0 +1,14 @@
+screenshot  = screenshot.png
+name        = MyTheme
+description = The MySite main theme.
+core        = 7.x
+
+; Let panels know where to find our plugins.
+plugins[panels][layouts] = plugins/layouts
+plugins[panels][styles] = plugins/styles
+api[panels][styles][version] = 2
+
+// Let panels everywhere know where to find default pages.
+api[page_manager][pages_default][version] = 1
+api[page_manager][pages_default][path] = pages
+
